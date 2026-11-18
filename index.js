@@ -111,9 +111,12 @@ app.get("/prices", async (_req, res) => {
   try {
     const response = await fetch(SOURCE_URL, {
       headers: {
-        "User-Agent": "Mozilla/5.0 (compatible; PVOILPriceChecker/1.0)",
-        "Accept": "text/html,application/xhtml+xml"
-      },
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+  "Accept-Language": "vi-VN,vi;q=0.9,en-US;q=0.8,en;q=0.7",
+  "Referer": "https://www.pvoil.com.vn/",
+  "Origin": "https://www.pvoil.com.vn"
+},
       signal: AbortSignal.timeout(25000)
     });
 
