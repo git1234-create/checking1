@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const SOURCE_URL = "https://www.pvoil.com.vn/api/oilprice/load-view?date=2026-11-12";
+const SOURCE_URL = "https://www.pvoil.com.vn/tin-gia-xang-dau";
 
 function decodeHtml(value) {
   return value
