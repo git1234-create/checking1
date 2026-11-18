@@ -1,0 +1,15 @@
+{
+  "name": "pvoil-price-checker",
+  "version": "1.0.0",
+  "description": "Fetch latest PVOIL retail fuel prices",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
